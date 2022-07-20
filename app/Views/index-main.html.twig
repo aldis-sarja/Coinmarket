@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cryptocurrency price list</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+<table id="priceList">
+    <tr>
+        <th>Cryptocurrency</th>
+        <th>Symbol</th>
+        <th>Price in USD</th>
+    </tr>
+    {% for coin in priceList %}
+        <tr>
+            <td>{{ coin.name }}</td>
+            <td>{{ coin.symbol }}</td>
+            <td>{{ coin.price }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
